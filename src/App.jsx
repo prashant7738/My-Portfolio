@@ -1,15 +1,31 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import Project from './components/Projects';
+
+
+// For routing 
+import {BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 
 function App(){
   return (
-    <div className='bg-slate-950 min-h-screen'>
-      <Navbar />
-      <Hero />
-      <Skills />
 
-    </div>
+    <Router>
+
+        <div className='bg-slate-950 min-h-screen'>
+          <Navbar />
+          <Routes>
+
+            <Route path ='/' element={<> <Hero/> <Skills/> </>} />
+
+            <Route path="/projects" element={<Project/>} />
+            
+          </Routes>
+          
+
+        </div>
+    </Router>
+   
   );
 };
 
