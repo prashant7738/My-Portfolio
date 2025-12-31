@@ -4,12 +4,12 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Full-Stack Development",
-      skills: ["Python (100 Days Completed)", "Django(DRF)", "React", "PostgreSQL"],
+      skills: ["Django(DRF)", "React", "Tailwind CSS", "PostgreSQL"],
       color: "text-blue-500"
     },
     {
       title: "Data Science & Automation",
-      skills: ["Data Science", "Web Scraping", "Selenium", "Scrapy"],
+      skills: ["Python-Expert","Data Science", "Web Scraping", "Selenium"],
       color: "text-emerald-500"
     },
     {
@@ -60,8 +60,8 @@ const Skills = () => {
           <div className="flex items-center gap-4">
             <div className="text-4xl">🏆</div>
             <div>
-              <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk']">100 Days of Python</h4>
-              <p className="text-slate-400 font-['Inter']">Challenge successfully completed. 100+ days of consistent coding.</p>
+              <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk']">Django-Expert</h4>
+              <p className="text-slate-400 font-['Inter']">Certified Django Rest Framework Developer.</p>
             </div>
           </div>
           <div className="bg-emerald-500 text-slate-950 px-6 py-2 rounded-full font-bold text-sm">
