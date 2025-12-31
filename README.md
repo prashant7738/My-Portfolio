@@ -1,21 +1,66 @@
-<<<<<<< HEAD
-# React + Vite
+# 🚀 Prashant Kafle | Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio built with **React**, **Tailwind CSS**, and **Vite**. This project showcases my journey as a Computer Engineering student, focusing on Python automation, Web Development (Django/React), and Digital Marketing.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [prashantkafle33.com.np](https://prashantkafle33.com.np)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## React Compiler
+- **Frontend:** React.js, Tailwind CSS
+- **Icons:** Lucide-React
+- **Routing:** React Router DOM (v6)
+- **Design:** Dark Mode, Responsive UI, Backdrop-blur Effects
+- **Backend (Skills):** Python, Django Rest Framework (DRF), PostgreSQL
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- **Single Page Application (SPA):** Seamless navigation using React Router without page refreshes.
+- **Responsive Navigation:** Custom-built mobile menu with `useState` toggle logic.
+- **Dynamic Projects Section:** Automated rendering of projects with conditional links for GitHub and Live Demos.
+- **About & Contact Section:** Integrated personal bio highlighting the "100 Days of Python" milestone and a functional contact form.
+- **Modern UI/UX:** Built with a "Space Grotesk" and "Inter" font pairing, featuring smooth scroll and hover animations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# My-Portfolio
-This is my portfolio website created using React and Tailwind CSS.
->>>>>>> 18673a941a55136df1834b3a19a21c3d23400c1b
+## 📂 Project Structure
+
+```text
+src/
+ ┣ components/
+ ┃ ┣ Navbar.jsx        # Navigation with mobile toggle logic
+ ┃ ┣ Hero.jsx          # Introduction & Main CTA
+ ┃ ┣ Skills.jsx        # Technical expertise categories
+ ┃ ┣ Projects.jsx      # Project grid with optional links
+ ┃ ┣ AboutContact.jsx  # Bio and Contact Form combined
+ ┃ ┗ Footer.jsx        # Social links & dynamic copyright
+ ┣ App.jsx             # Routing and global layout
+ ┗ main.jsx            # Entry point
+🚀 Getting Started
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+Install dependencies:
+
+Bash
+
+npm install
+Install Icon Library:
+
+Bash
+
+npm install lucide-react
+Run the development server:
+
+Bash
+
+npm run dev
+📈 My Roadmap
+[x] Complete 100 Days of Python.
+
+[x] Build Portfolio with React & Tailwind.
+
+[ ] Integrate EmailJS for real-time contact form emails.
+
+[ ] Connect Django Backend for dynamic project updates.
+
+Built with ❤️ by Prashant Kafle
