@@ -1,6 +1,6 @@
 # 🚀 Prashant Kafle | Full-Stack Developer Portfolio
 
-A modern, responsive portfolio built with **React**, **Tailwind CSS**, and **Vite**. This project showcases my journey as a Computer Engineering student, focusing on Python automation, Web Development (Django/React), and Digital Marketing.
+A modern, responsive portfolio built with **React**, **Tailwind CSS**, and **Vite**. This project showcases my journey as a Computer Engineering student, focusing on Python automation, Web Development (Django/React),LLM and Digital Marketing.
 
 🔗 **Live Demo:** [prashantkafle33.com.np](https://prashantkafle33.com.np)
 
