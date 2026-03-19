@@ -4,18 +4,39 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Full-Stack Development",
-      skills: ["Django(DRF)", "React", "Tailwind CSS", "PostgreSQL"],
-      color: "text-blue-500"
+      skills: ["React 18+", "Vite", "Django REST Framework", "Django Channels", "Tailwind CSS", "PostgreSQL"],
+      color: "text-blue-500",
+      icon: "⚡"
     },
     {
-      title: "Data Science & Automation",
-      skills: ["Python-Expert","Data Science", "Web Scraping", "Selenium"],
-      color: "text-emerald-500"
+      title: "AI & Machine Learning",
+      skills: ["GPT-5 Integration", "Groq AI (LLaMA)", "Google Gemini", "Azure OpenAI", "Semantic Caching", "ChromaDB"],
+      color: "text-emerald-500",
+      icon: "🤖"
     },
     {
-      title: "Marketing & CMS",
-      skills: ["WordPress Website Building", "Digital Marketing", "SEO", "Niche Strategy"],
-      color: "text-amber-500"
+      title: "Backend & Infrastructure",
+      skills: ["Django (DRF)", "WebSockets/Channels", "SQLAlchemy Core", "Redis", "JWT Auth", "CORS/Security"],
+      color: "text-purple-500",
+      icon: "🔧"
+    },
+    {
+      title: "Real-Time & Data",
+      skills: ["WebSocket Architecture", "Real-time Bidding", "Live Updates", "Data Visualization", "API Design"],
+      color: "text-amber-500",
+      icon: "📡"
+    },
+    {
+      title: "Data Science & Scraping",
+      skills: ["Playwright", "Python Automation", "Selenium", "Beautiful Soup", "Pandas", "Web Scraping"],
+      color: "text-pink-500",
+      icon: "🕷️"
+    },
+    {
+      title: "Maps & Geolocation",
+      skills: ["Leaflet.js", "Baato Maps API", "Geolocation Services", "Interactive Maps", "Location Tracking"],
+      color: "text-cyan-500",
+      icon: "📍"
     }
   ];
 
@@ -28,25 +49,28 @@ const Skills = () => {
             Technical <span className="text-blue-600">Expertise</span>
           </h2>
           <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-          <p className="text-slate-400 mt-6 max-w-2xl italic font-['Inter']">
-            "Engineering scalable backends, interactive frontends, and data-driven marketing solutions."
+          <p className="text-slate-400 mt-6 max-w-3xl italic font-['Inter'] text-lg">
+            Full-stack engineer with expertise in building AI-powered applications, real-time systems, and data-driven solutions. Proficient in frontend frameworks, backend architecture, and emerging AI technologies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillGroups.map((group, index) => (
             <div 
               key={index} 
-              className="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/30 transition-all duration-300"
+              className="bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 p-8 rounded-2xl hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group"
             >
-              <h3 className={`text-xl font-bold mb-6 font-['Space_Grotesk'] ${group.color}`}>
-                {group.title}
-              </h3>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="text-3xl">{group.icon}</span>
+                <h3 className={`text-lg font-bold font-['Space_Grotesk'] ${group.color}`}>
+                  {group.title}
+                </h3>
+              </div>
               
-              <ul className="space-y-4 font-['Inter']">
+              <ul className="space-y-3 font-['Inter']">
                 {group.skills.map((skill, sIndex) => (
-                  <li key={sIndex} className="flex items-center text-slate-300">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></span>
+                  <li key={sIndex} className="flex items-center text-slate-300 group-hover:text-slate-200 transition-colors">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:bg-blue-400 transition-colors"></span>
                     {skill}
                   </li>
                 ))}
@@ -55,17 +79,50 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Milestone Badge */}
-        <div className="mt-16 p-8 bg-emerald-500/10 border border-emerald-500/20 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <div className="text-4xl">🏆</div>
-            <div>
-              <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk']">Django-Expert</h4>
-              <p className="text-slate-400 font-['Inter']">Certified Django Rest Framework Developer.</p>
+        {/* Certifications & Highlights */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Django Expert Badge */}
+          <div className="p-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-2xl hover:border-emerald-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk'] mb-2">Django Expert</h4>
+                <p className="text-slate-400 font-['Inter']">Certified Django REST Framework Developer with advanced expertise.</p>
+              </div>
+              <div className="text-4xl">🏆</div>
             </div>
           </div>
-          <div className="bg-emerald-500 text-slate-950 px-6 py-2 rounded-full font-bold text-sm">
-            CERTIFIED
+
+          {/* Full-Stack Engineer */}
+          <div className="p-8 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-2xl hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk'] mb-2">Full-Stack Engineer</h4>
+                <p className="text-slate-400 font-['Inter']">Building complete solutions from AI backends to responsive frontends.</p>
+              </div>
+              <div className="text-4xl">🚀</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tech Stack Summary */}
+        <div className="mt-16 p-8 bg-slate-900 border border-slate-700 rounded-2xl">
+          <h3 className="text-xl font-bold text-slate-100 mb-6 font-['Space_Grotesk']">Quick Tech Stack</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { label: "Frontend", techs: "React, Vite, Tailwind" },
+              { label: "Backend", techs: "Django, DRF, Channels" },
+              { label: "Data", techs: "PostgreSQL, SQLAlchemy" },
+              { label: "AI", techs: "GPT-5, Groq, Gemini" },
+              { label: "Real-time", techs: "WebSockets, Redis" },
+              { label: "Maps", techs: "Leaflet, Baato" },
+              { label: "Scraping", techs: "Playwright, Selenium" },
+              { label: "Auth", techs: "JWT, Token Auth" }
+            ].map((item, i) => (
+              <div key={i} className="p-4 bg-slate-800 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors">
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">{item.label}</p>
+                <p className="text-sm text-slate-300 font-['Inter']">{item.techs}</p>
+              </div>
+            ))}
           </div>
         </div>
 

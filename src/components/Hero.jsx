@@ -1,27 +1,101 @@
 import React from "react";
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import myPhoto from '../assets/my-image-2.jpeg';
 
 const Hero = () => {
 
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center gap-6">
-            <div className="flex">
-                <img src={myPhoto} alt="My profile" className="w-32 h-32 md:w-64 md:h-64 rounded-full border-4 border-blue-600 object-cover shadow-2xl shadow-blue-900/20 transition-transform hover:scale-105 hover:shadow-blue-600/40 duration-300" />
-            </div>
-            <div className=" text-slate-100 font-bold text-3xl px-8 py-8 md:text-5xl md:p-4">
-                Hi, I’m Prashant
+        <section className="min-h-screen flex flex-col items-center justify-center gap-8 px-6 py-20 relative overflow-hidden">
+            {/* Animated background elements */}
+            <div className="absolute inset-0 -z-10 overflow-hidden">
+                <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
             </div>
 
-            {/* <div className="flex px-8 border border-6 border-amber-800 ">
-                <p className="text-slate-100 text-xl font-normal md:text-2xl text-justify"> I’m a <span className="font-bold text-slate-500">Computer Engineering</span> student and aspiring <span className="font-bold text-slate-500">Full Stack Developer</span> from Nepal, specializing in Python, Django, and React. I build real-world web applications, automation tools, and data-driven solutions with a strong focus on digital marketing and scalable systems.
-                </p>
-            </div> */}
-            <div className="max-w-2xl px-4 ">
-                <p className="text-slate-100 text-lg font-normal md:text-xl md:text-justify leading-relaxed"> From <span className="font-bold text-slate-500">Backend</span> logic to <span className="font-bold text-slate-500">Frontend</span> experience — I build complete solutions. Aspiring full-stack developer specializing in Python, Django, and React.
+            <div className="flex justify-center mb-8">
+                <div className="relative group">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
+                    <img 
+                        src={myPhoto} 
+                        alt="My profile" 
+                        className="relative w-40 h-40 md:w-72 md:h-72 rounded-full border-4 border-blue-600 object-cover shadow-2xl shadow-blue-900/40 transition-transform hover:scale-105 duration-300" 
+                    />
+                </div>
+            </div>
+
+            <div className="text-center">
+                <h1 className="text-5xl md:text-7xl font-bold text-slate-100 font-['Space_Grotesk'] mb-4">
+                    Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Prashant</span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-slate-300 font-['Inter'] mb-2">Full-Stack Engineer & AI Enthusiast</p>
+                
+                <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8 rounded-full"></div>
+            </div>
+
+            <div className="max-w-3xl px-4 text-center">
+                <p className="text-slate-200 text-lg md:text-xl leading-relaxed font-['Inter'] mb-8">
+                    I architect <span className="font-bold text-blue-400">scalable full-stack solutions</span> combining modern backend systems with intuitive frontends. 
+                    Specializing in <span className="font-bold text-emerald-400">AI integration</span>, <span className="font-bold text-purple-400">real-time systems</span>, and <span className="font-bold text-amber-400">data-driven applications</span>.
                 </p>
             </div>
-            
 
+            {/* Key Highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mb-12">
+                <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-blue-500/50 transition-all">
+                    <div className="text-3xl mb-2">🏆</div>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">Hackathon Builder</h3>
+                    <p className="text-slate-400 text-sm">AI Hackathon 2026 Winner</p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-purple-500/50 transition-all">
+                    <div className="text-3xl mb-2">💾</div>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">DBMS Expert</h3>
+                    <p className="text-slate-400 text-sm">Real-time Auction Platform</p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-emerald-500/50 transition-all">
+                    <div className="text-3xl mb-2">🤖</div>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">AI Integration</h3>
+                    <p className="text-slate-400 text-sm">GPT-5, LLaMA, Gemini</p>
+                </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <a 
+                    href="/projects"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg hover:shadow-blue-600/50 transition-all transform hover:scale-105 group"
+                >
+                    View My Work
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a 
+                    href="/contact"
+                    className="inline-flex items-center gap-2 bg-slate-800 text-slate-100 px-8 py-3 rounded-lg font-bold border border-slate-700 hover:border-blue-500/50 transition-all"
+                >
+                    Get In Touch
+                </a>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-6">
+                <a href="https://github.com/prashant7738" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
+                    <Github size={24} />
+                </a>
+                <a href="https://linkedin.com/in/prashant-kafle" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
+                    <Linkedin size={24} />
+                </a>
+                <a href="mailto:prashantkafle7738@gmail.com" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
+                    <Mail size={24} />
+                </a>
+            </div>
+
+            {/* Scroll Indicator */}
+            <div className="absolute bottom-8 flex flex-col items-center gap-2 animate-bounce">
+                <p className="text-slate-500 text-sm font-['Inter']">Scroll to explore</p>
+                <div className="w-6 h-10 border-2 border-slate-500 rounded-full flex items-start justify-center p-2">
+                    <div className="w-1 h-2 bg-slate-500 rounded-full animate-pulse"></div>
+                </div>
+            </div>
         </section>
     );
 };
