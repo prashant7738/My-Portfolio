@@ -23,6 +23,9 @@ const Navbar = () => {
                 <div className='hidden md:flex gap-10 text-slate-100 font-medium items-center'>
                     <Link to="/" className='hover:text-blue-400 transition-colors'>Home</Link>
                     <Link to="/projects" className='hover:text-blue-400 transition-colors'>Projects</Link>
+                    <a href="/resume.pdf" download className='hover:text-blue-400 transition-colors'>
+                        Resume
+                    </a>
                     <Link to="/contact" className='bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all'>
                         Contact Me
                     </Link>
@@ -46,6 +49,9 @@ const Navbar = () => {
                     <Link to="/projects" onClick={toggleMenu} className='text-slate-100 text-lg font-medium hover:text-blue-400'>
                         Projects
                     </Link>
+                    <a href="/resume.pdf" download className='text-slate-100 text-lg font-medium hover:text-blue-400'>
+                        Resume
+                    </a>
                     <Link to="/contact" onClick={toggleMenu} className='bg-blue-600 text-white text-center py-3 rounded-xl font-bold'>
                         Contact Me
                     </Link>
