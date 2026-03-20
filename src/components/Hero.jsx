@@ -42,19 +42,19 @@ const Hero = () => {
 
             {/* Key Highlights */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mb-12">
-                <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-blue-500/50 transition-all">
-                    <div className="text-3xl mb-2">🏆</div>
-                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">Hackathon Builder</h3>
-                    <p className="text-slate-400 text-sm">AI Hackathon 2026 Winner</p>
-                </div>
                 <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-purple-500/50 transition-all">
                     <div className="text-3xl mb-2">💾</div>
-                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">DBMS Expert</h3>
-                    <p className="text-slate-400 text-sm">Real-time Auction Platform</p>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">Full Stack Web Developer</h3>
+                    <p className="text-slate-400 text-sm">Django Rest Framework Expert and React Builder</p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-blue-500/50 transition-all">
+                    <div className="text-3xl mb-2">🏆</div>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">Python Develper</h3>
+                    <p className="text-slate-400 text-sm">Advance Python Expert and Web Scrapper</p>
                 </div>
                 <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-xl text-center hover:border-emerald-500/50 transition-all">
                     <div className="text-3xl mb-2">🤖</div>
-                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">AI Integration</h3>
+                    <h3 className="text-slate-100 font-bold font-['Space_Grotesk'] mb-1">AI Engineer</h3>
                     <p className="text-slate-400 text-sm">GPT-5, LLaMA, Gemini</p>
                 </div>
             </div>
@@ -76,26 +76,6 @@ const Hero = () => {
                 </a>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-6">
-                <a href="https://github.com/prashant7738" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
-                    <Github size={24} />
-                </a>
-                <a href="https://linkedin.com/in/prashant-kafle" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
-                    <Linkedin size={24} />
-                </a>
-                <a href="mailto:prashantkafle7738@gmail.com" className="text-slate-400 hover:text-white transition-colors hover:scale-125 transform">
-                    <Mail size={24} />
-                </a>
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 flex flex-col items-center gap-2 animate-bounce">
-                <p className="text-slate-500 text-sm font-['Inter']">Scroll to explore</p>
-                <div className="w-6 h-10 border-2 border-slate-500 rounded-full flex items-start justify-center p-2">
-                    <div className="w-1 h-2 bg-slate-500 rounded-full animate-pulse"></div>
-                </div>
-            </div>
         </section>
     );
 };

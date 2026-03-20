@@ -1,13 +1,45 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send, User, Code2, GraduationCap } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const AboutContact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(''); // 'success', 'error', or ''
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    alert("Message sent! Prashant will get back to you soon.");
+    setLoading(true);
+    setStatus('');
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          user_name: formData.name,
+          user_email: formData.email,
+          user_message: formData.message,
+          to_email: 'prashantkafle7738@gmail.com',
+        }
+      );
+
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      
+      // Show success for 5 seconds
+      setTimeout(() => setStatus(''), 5000);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 5000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -103,10 +135,27 @@ const AboutContact = () => {
 
                 <button 
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-[1.01] active:scale-[0.98]"
+                  disabled={loading}
+                  className={`w-full font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform ${
+                    loading 
+                      ? 'bg-slate-600 cursor-not-allowed' 
+                      : 'bg-blue-600 hover:bg-blue-500 hover:scale-[1.01] active:scale-[0.98]'
+                  } text-white`}
                 >
-                  Send Message <Send size={18} />
+                  {loading ? 'Sending...' : 'Send Message'} <Send size={18} />
                 </button>
+
+                {/* Status Messages */}
+                {status === 'success' && (
+                  <div className="p-4 bg-emerald-900/30 border border-emerald-700 rounded-lg text-emerald-400 text-sm text-center">
+                    ✓ Message sent! I'll get back to you soon.
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="p-4 bg-red-900/30 border border-red-700 rounded-lg text-red-400 text-sm text-center">
+                    ✗ Failed to send. Check your EmailJS setup.
+                  </div>
+                )}
               </form>
             </div>
           </div>

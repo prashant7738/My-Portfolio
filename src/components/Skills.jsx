@@ -9,8 +9,8 @@ const Skills = () => {
       icon: "⚡"
     },
     {
-      title: "AI & Machine Learning",
-      skills: ["GPT-5 Integration", "Groq AI (LLaMA)", "Google Gemini", "Azure OpenAI", "Semantic Caching", "ChromaDB"],
+      title: "AI Engineer",
+      skills: ["LLM Integration", "Semantic Caching", "ChromaDB", "LangChain"],
       color: "text-emerald-500",
       icon: "🤖"
     },
@@ -21,20 +21,14 @@ const Skills = () => {
       icon: "🔧"
     },
     {
-      title: "Real-Time & Data",
-      skills: ["WebSocket Architecture", "Real-time Bidding", "Live Updates", "Data Visualization", "API Design"],
-      color: "text-amber-500",
-      icon: "📡"
-    },
-    {
       title: "Data Science & Scraping",
       skills: ["Playwright", "Python Automation", "Selenium", "Beautiful Soup", "Pandas", "Web Scraping"],
       color: "text-pink-500",
       icon: "🕷️"
     },
     {
-      title: "Maps & Geolocation",
-      skills: ["Leaflet.js", "Baato Maps API", "Geolocation Services", "Interactive Maps", "Location Tracking"],
+      title: "Digital Marketing",
+      skills: ["WordPress", "SEO Writing", "Email Marketing", "Lead Generation", "AI Marketing"],
       color: "text-cyan-500",
       icon: "📍"
     }

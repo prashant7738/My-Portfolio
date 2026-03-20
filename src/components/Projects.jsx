@@ -5,18 +5,6 @@ import { Github, ExternalLink, Zap, Award, Database } from 'lucide-react';
 const Project = () => {
     const projectList = [
         {
-            title: "HealthSaathi",
-            description: "AI-powered medical triage web application with instant symptom assessment in Nepali & English. Voice input, real-time maps, user authentication, and offline-ready features.",
-            category: "Full-Stack AI",
-            tags: ["React", "Django", "GPT-5", "Groq LLM", "Tailwind", "PostgreSQL", "Leaflet.js"],
-            github: "https://github.com/prashant7738/HealthSaathi",
-            live: "https://healthsaathi.example.com",
-            featured: true,
-            hackathon: true,
-            icon: "🏥",
-            highlights: ["AI Symptom Triage", "Voice Input", "Maps Integration", "Bilingual Support"]
-        },
-        {
             title: "LIVE BIDDING NP",
             description: "Real-time auction platform with live WebSocket bidding, role-aware admin controls, and SQL-first data architecture. JWT authentication with HttpOnly cookies.",
             category: "Full-Stack",
@@ -29,11 +17,23 @@ const Project = () => {
             highlights: ["Real-time WebSockets", "SQLAlchemy Core", "Role-based Auth", "Live Auction Updates"]
         },
         {
-            title: "Web Scraping - Playwright",
+            title: "HealthSaathi",
+            description: "AI-powered medical triage web application with instant symptom assessment in Nepali & English. Voice input, real-time maps, user authentication, and offline-ready features.",
+            category: "Full-Stack AI",
+            tags: ["React", "Django", "GPT-5", "Groq LLM", "Tailwind", "PostgreSQL", "Leaflet.js"],
+            github: "https://github.com/prashant7738/HealthSaathi",
+            live: "",
+            featured: true,
+            hackathon: true,
+            icon: "🏥",
+            highlights: ["AI Symptom Triage", "Voice Input", "Maps Integration", "Bilingual Support"]
+        },
+        {
+            title: "Google Map Reviews Web Scraping",
             description: "Advanced web scraping system using Playwright for fake review detection dataset. Handles dynamic websites with JavaScript rendering and intelligent data extraction.",
             category: "Data Science",
             tags: ["Playwright", "Python", "Data Analysis", "Chrome Automation"],
-            github: "https://github.com/prashant7738/playwright-scraper",
+            github: "https://github.com/prashant7738/GoogleMap-Review-Scrapper",
             live: "",
             featured: false,
             icon: "🕷️"
@@ -47,11 +47,11 @@ const Project = () => {
             live: "" // Leave empty if not available
         },
         {
-            title: "Web Scrapping Suite",
-            description: "A collection of scrapers that extract data from dynamic websites using headless browsers and proxy rotation.",
+            title: "Daraz Reviews Scrapping",
+            description: "A daraz Reviews Scrapper using Playwright",
             category: "Data Science",
-            tags: ["Beautiful Soup", "Scrapy", "Selenium"],
-            github: "https://github.com/prashant7738/followerapi",
+            tags: ["Playwright", "Automation", "Selenium"],
+            github: "https://github.com/prashant7738/Daraz-Review-Scrapping",
             live: "" 
         },
         {
@@ -61,14 +61,6 @@ const Project = () => {
             tags: ["WordPress", "Elementor", "SEO"],
             github: "", // WordPress usually doesn't have a github repo
             live: "https://footballbootszone.great-site.net"
-        },
-        {
-            title: "Django Rest Framework API",
-            description: "A full-featured backend API for an e-commerce platform with JWT authentication.",
-            category: "Web Development",
-            tags: ["Python", "Django", "DRF"],
-            github: "https://github.com/prashant7738/ecommerce_backend",
-            live: ""
         }
     ];
 
