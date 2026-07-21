@@ -5,6 +5,30 @@ import { Github, ExternalLink, Zap, Award, Database } from 'lucide-react';
 const Project = () => {
     const projectList = [
         {
+            title: "Contextra AI",
+            description: "RAG-based document intelligence platform. Upload PDFs, chat with your documents using vector search, generate 80/20 Pareto summaries, and create smart flashcards — all grounded in your own files. Built with Astro + React frontend and FastAPI backend.",
+            category: "AI / Full-Stack",
+            tags: ["Python", "FastAPI", "RAG", "pgvector", "PostgreSQL", "Astro", "React", "TypeScript", "LLM", "HuggingFace"],
+            github: "https://github.com/prashant7738/Contextra-AI",
+            live: "https://contextra-ai.vercel.app/",
+            featured: true,
+            ai: true,
+            icon: "🧠",
+            highlights: ["PDF Chat with Citations", "Vector Semantic Search", "Pareto 80/20 Summaries", "Smart Flashcard Generation"]
+        },
+        {
+            title: "Multiagent Data Analyst",
+            description: "Automated LLM-powered data analysis pipeline using LangGraph state-based orchestration. Four specialized agents handle structural profiling, semantic tagging, preprocessing, and statistical analysis of CSV datasets — generating charts and quality scores automatically.",
+            category: "AI / Data Engineering",
+            tags: ["Python", "LangGraph", "Groq", "Llama 3.3", "Pandas", "NumPy", "SciPy", "Matplotlib"],
+            github: "https://github.com/prashant7738/multiagent-analyst",
+            live: "",
+            featured: true,
+            ai: true,
+            icon: "📊",
+            highlights: ["4-Agent LangGraph Pipeline", "Groq LLM Integration", "10-Step Data Preprocessing", "Auto Chart Generation"]
+        },
+        {
             title: "LIVE BIDDING NP",
             description: "Real-time auction platform with live WebSocket bidding, role-aware admin controls, and SQL-first data architecture. JWT authentication with HttpOnly cookies.",
             category: "Full-Stack",
@@ -93,7 +117,9 @@ const Project = () => {
                                 <div 
                                     key={index} 
                                     className={`group relative bg-gradient-to-br rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between h-full
-                                        ${project.hackathon 
+                                        ${project.ai
+                                            ? 'from-blue-900/30 to-cyan-900/30 border-2 border-blue-500/50 hover:border-blue-400 shadow-2xl shadow-blue-900/20'
+                                            : project.hackathon 
                                             ? 'from-green-900/30 to-emerald-900/30 border-2 border-emerald-500/50 hover:border-emerald-400 shadow-2xl shadow-emerald-900/20' 
                                             : 'from-purple-900/30 to-blue-900/30 border-2 border-purple-500/50 hover:border-purple-400 shadow-2xl shadow-purple-900/20'
                                         }
@@ -101,6 +127,12 @@ const Project = () => {
                                 >
                                     {/* Badge Icons */}
                                     <div className="absolute top-4 right-4 flex items-center gap-2">
+                                        {project.ai && (
+                                            <div className="bg-blue-500/20 border border-blue-500/50 rounded-full px-3 py-1 flex items-center gap-1">
+                                                <Zap size={14} className="text-blue-400" />
+                                                <span className="text-xs font-bold text-blue-400">AI</span>
+                                            </div>
+                                        )}
                                         {project.hackathon && (
                                             <div className="bg-emerald-500/20 border border-emerald-500/50 rounded-full px-3 py-1 flex items-center gap-1">
                                                 <Award size={14} className="text-emerald-400" />
