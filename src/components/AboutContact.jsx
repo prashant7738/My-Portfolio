@@ -55,32 +55,44 @@ const AboutContact = () => {
                 About <span className="text-blue-500">Me</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed font-['Inter']">
-                I am a <span className="text-slate-100 font-semibold">Computer Engineering</span> student from Nepal with a deep focus on building functional, logic-driven applications. My journey is defined by a mix of engineering discipline and creative problem solving.
+                I'm a <span className="text-slate-100 font-semibold">Computer Engineering</span> student from Nepal obsessed with building <span className="text-blue-400 font-semibold">production-ready Gen AI systems</span>. I don't just call LLM APIs — I build RAG pipelines, debug retrieval failures, optimize latency, and design agentic workflows that actually work.
+              </p>
+              <p className="text-slate-400 text-lg leading-relaxed font-['Inter'] mt-4">
+                My background in full-stack engineering gives me an edge: I understand how AI systems connect to real databases, backends, and users — not just in notebooks, but in deployed products.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Feature 1 */}
-              <div className="flex gap-4 p-4 bg-slate-900/50 border border-slate-800 rounded-2xl">
-                <div className="text-blue-500"><Code2 size={24} /></div>
+              <div className="flex gap-4 p-4 bg-slate-900/50 border border-blue-500/20 rounded-2xl hover:border-blue-500/40 transition-colors">
+                <div className="text-blue-400"><Code2 size={24} /></div>
                 <div>
-                  <h4 className="text-slate-100 font-bold text-sm">Python Expert</h4>
-                  <p className="text-slate-500 text-xs mt-1">100 Days of Course Completed</p>
+                  <h4 className="text-slate-100 font-bold text-sm">Multi-Agent Builder</h4>
+                  <p className="text-slate-500 text-xs mt-1">LangGraph · LangChain · Groq API</p>
                 </div>
               </div>
               {/* Feature 2 */}
-              <div className="flex gap-4 p-4 bg-slate-900/50 border border-slate-800 rounded-2xl">
-                <div className="text-emerald-500"><GraduationCap size={24} /></div>
+              <div className="flex gap-4 p-4 bg-slate-900/50 border border-violet-500/20 rounded-2xl hover:border-violet-500/40 transition-colors">
+                <div className="text-violet-400"><GraduationCap size={24} /></div>
                 <div>
-                  <h4 className="text-slate-100 font-bold text-sm">Engineering</h4>
-                  <p className="text-slate-500 text-xs mt-1">Focus on Scalable Systems</p>
+                  <h4 className="text-slate-100 font-bold text-sm">RAG Systems</h4>
+                  <p className="text-slate-500 text-xs mt-1">pgvector · BGE Embeddings · FastAPI</p>
                 </div>
               </div>
-            </div>
-
-            <div className="space-y-4 pt-4 border-t border-slate-900">
-              <div className="flex items-center gap-4 text-slate-400">
-                <MapPin className="text-blue-500" size={20} />
+              {/* Feature 3 */}
+              <div className="flex gap-4 p-4 bg-slate-900/50 border border-cyan-500/20 rounded-2xl hover:border-cyan-500/40 transition-colors">
+                <div className="text-cyan-400"><User size={24} /></div>
+                <div>
+                  <h4 className="text-slate-100 font-bold text-sm">Full-Stack Engineering</h4>
+                  <p className="text-slate-500 text-xs mt-1">Django · React · PostgreSQL</p>
+                </div>
+              </div>
+              {/* Feature 4 */}
+              <div className="flex gap-4 p-4 bg-slate-900/50 border border-emerald-500/20 rounded-2xl hover:border-emerald-500/40 transition-colors">
+                <div className="text-emerald-400"><User size={24} /></div>
+                <div>
+                  <h4 className="text-slate-100 font-bold text-sm">Open to Freelance</h4>
+                  <p className="text-slate-500 text-xs mt-1">Remote · AI Projects · Contracts</p>
                 <span>Lalitpur, Nepal (Available for Remote)</span>
               </div>
               <div className="flex items-center gap-4 text-slate-400">
@@ -97,7 +109,7 @@ const AboutContact = () => {
             
             <div className="relative bg-slate-900 border border-slate-800 p-8 md:p-10 rounded-[2rem]">
               <h3 className="text-2xl font-bold text-slate-100 font-['Space_Grotesk'] mb-2">Send a Message</h3>
-              <p className="text-slate-500 text-sm mb-8">Have a project? I'm currently open for freelance work.</p>
+              <p className="text-slate-500 text-sm mb-8">Building an AI product? I'm open for freelance Gen AI contracts — remote, worldwide.</p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
