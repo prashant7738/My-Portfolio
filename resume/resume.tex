@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Candidate : Prashant Kafle
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% ATS NOTE: pdfgentounicode=1 makes the PDF machine-readable / ATS-parsable
+\pdfgentounicode=1
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+\setlength{\footskip}{3.60004pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands (unchanged from original template)
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Prashant Kafle} \\ \vspace{1pt}
+    \small +977-9741897738 $|$
+    \href{mailto:prashantkafle7738@gmail.com}{\underline{prashantkafle7738@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/prashantkafle33/}{\underline{linkedin.com/in/prashantkafle33}} $|$
+    \href{https://github.com/prashant7738}{\underline{github.com/prashant7738}} $|$
+    \href{https://www.prashantkafle33.com.np}{\underline{prashantkafle33.com.np}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \small{AI Engineer and Computer Engineering student with production experience building RAG pipelines, multi-agent LLM systems, and AI-powered full-stack applications. Published research on evaluating AI agents with LLM-based judges. Proficient in LangGraph, LangChain, pgvector, Groq, HuggingFace, and FastAPI. Focused on reliable, cost-efficient LLM architectures that ship to real users.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thapathali Engineering College, IOE -- Tribhuvan University}{Kathmandu, Nepal}
+      {Bachelor of Engineering in Computer Engineering}{Jan. 2024 -- Jan. 2028}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Freelance AI \& Full-Stack Developer}{Mar. 2025 -- Present}
+      {Self-Employed}{Remote}
+      \resumeItemListStart
+        \resumeItem{Integrated Groq and OpenAI APIs into production apps; designed prompt pipelines with fallback strategies and RAG-based document search using pgvector on PostgreSQL}
+        \resumeItem{Delivered full-stack applications with React, Django REST Framework, JWT auth, and RBAC; maintained documentation for non-technical clients across remote workflows}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Contextra AI} $|$ \emph{FastAPI, RAG, pgvector, PostgreSQL, BGE Embeddings, HuggingFace, Astro, React}
+          $|$ \href{https://contextra-ai.vercel.app}{\underline{Live}}}
+          {2026}
+          \resumeItemListStart
+            \resumeItem{Architected a production RAG system for PDF Q\&A; hybrid OCR pipeline (PyMuPDF + EasyOCR) feeds BGE-small embeddings into pgvector for grounded, citation-backed LLM answers}
+            \resumeItem{Added Pareto 80/20 summary and smart flashcard generation features; JWT multi-workspace auth; FastAPI backend with SQLAlchemy + Alembic}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Multiagent Data Analyst} $|$ \emph{Python, LangGraph, Groq API, Llama 3.3-70B, Pandas, NumPy, Matplotlib}}
+          {2026}
+          \resumeItemListStart
+            \resumeItem{Built a LangGraph DAG orchestrating 4 stateless agents (Structural Profiler $\to$ Semantic Tagger $\to$ Preprocessor $\to$ Statistical Analyser) to process raw CSV files end-to-end}
+            \resumeItem{Semantic Tagger uses Groq Llama 3.3-70B with minimal-token prompts; Preprocessor runs a 10-step pipeline with IQR outlier clipping, normalisation, and a 0--100 data quality score}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{The Automaton Boardroom} $|$ \emph{Python, LangGraph, LangSmith, E2B, Streamlit, Groq, Gemini}}
+          {2026}
+          \resumeItemListStart
+            \resumeItem{Built an autonomous multi-agent software micro-agency that converts app ideas into technical specs, generates code, provisions isolated E2B sandboxes, and runs verification tests before human review}
+            \resumeItem{Added prompt-safety guardrails, stack-aware developer prompts, MCQ build-decision gating, and Groq/Gemini fallback to keep the workflow resilient and cost-efficient}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Live Bidding NP} $|$ \emph{React, Django Channels, SQLAlchemy Core, PostgreSQL, WebSockets, Redis}}
+          {2025 -- 2026}
+          \resumeItemListStart
+            \resumeItem{Real-time auction platform with concurrent WebSocket bid handling via Django Channels + Redis; SQLAlchemy Core for raw-SQL performance; JWT in HttpOnly cookies against XSS}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Evaluating AI Agents with LLM-Based Judges}{2026}
+      {Prashant Kafle, Sunil Paudel}{Undergraduate research paper}
+      \resumeItemListStart
+        \resumeItem{Compared ROUGE-L, Bradley-Terry, Elo-style ranking, and judge-human agreement analysis for evaluating agent responses on GAIA-style tasks}
+        \resumeItem{PDF available in portfolio and resume assets: \href{https://www.prashantkafle33.com.np/IEEE-conference-template-062824.pdf}{\underline{paper link}}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript (ES6+), TypeScript, SQL, HTML/CSS, C/C++} \\
+     \textbf{AI \& LLM}{: RAG, LangGraph, LangChain, Multi-Agent Systems, Prompt Engineering, HuggingFace, Groq API, OpenAI API, BGE Embeddings, pgvector, ChromaDB} \\
+     \textbf{Backend \& APIs}{: FastAPI, Django, Django REST Framework, Django Channels, WebSockets, JWT Auth} \\
+     \textbf{Data \& Databases}{: Pandas, NumPy, Matplotlib, Scikit-learn, PostgreSQL, SQLAlchemy Core, Redis} \\
+     \textbf{Languages \& Tools}{: Python, JavaScript, TypeScript, SQL, React, Astro, Git, Docker, Linux} \
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
