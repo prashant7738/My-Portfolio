@@ -25,3 +25,10 @@ dist-ssr
 
 
 .env.local
+
+# Resume / LaTeX build artifacts
+resume/*.aux
+resume/*.fdb_latexmk
+resume/*.fls
+resume/*.synctex.gz
+resume/*.pdf
