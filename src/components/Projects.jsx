@@ -29,6 +29,18 @@ const Project = () => {
             highlights: ["4-Agent LangGraph Pipeline", "Groq LLM Integration", "10-Step Data Preprocessing", "Auto Chart Generation"]
         },
         {
+            title: "The Automaton Boardroom",
+            description: "Autonomous multi-agent software micro-agency that turns app ideas into technical specs, generates code, provisions isolated E2B sandboxes, runs verification tests, and self-corrects failures before human review. Built with LangGraph, LangSmith, and Streamlit.",
+            category: "AI / Multi-Agent Systems",
+            tags: ["Python", "LangGraph", "LangSmith", "E2B", "Streamlit", "Gemini", "Groq", "Prompt Safety"],
+            github: "",
+            live: "",
+            featured: true,
+            ai: true,
+            icon: "🏢",
+            highlights: ["Spec to Code Workflow", "MCQ Build Decisions", "E2B Sandbox Execution", "Groq/Gemini Fallback"]
+        },
+        {
             title: "LIVE BIDDING NP",
             description: "Real-time auction platform with live WebSocket bidding, role-aware admin controls, and SQL-first data architecture. JWT authentication with HttpOnly cookies.",
             category: "Full-Stack",
@@ -39,18 +51,6 @@ const Project = () => {
             dbms: true,
             icon: "🔨",
             highlights: ["Real-time WebSockets", "SQLAlchemy Core", "Role-based Auth", "Live Auction Updates"]
-        },
-        {
-            title: "HealthSaathi",
-            description: "AI-powered medical triage web application with instant symptom assessment in Nepali & English. Voice input, real-time maps, user authentication, and offline-ready features.",
-            category: "Full-Stack AI",
-            tags: ["React", "Django", "GPT-5", "Groq LLM", "Tailwind", "PostgreSQL", "Leaflet.js"],
-            github: "https://github.com/prashant7738/HealthSaathi",
-            live: "",
-            featured: true,
-            hackathon: true,
-            icon: "🏥",
-            highlights: ["AI Symptom Triage", "Voice Input", "Maps Integration", "Bilingual Support"]
         },
         {
             title: "Google Map Reviews Web Scraping",
