@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Project from './components/Projects';
+import Publications from './components/Publications';
 import Footer from './components/Footer';
 import AboutContact from './components/AboutContact';
 
@@ -29,13 +30,16 @@ function App() {
         <Navbar />
         
         {/* Main Content Area */}
-        <main className="flex-grow">
+        <main className="grow">
           <Routes>
             {/* Home Page: Shows Hero and Skills */}
             <Route path='/' element={<> <Hero /> <Skills /> </>} />
 
             {/* Projects Page */}
             <Route path="/projects" element={<Project />} />
+
+            {/* Publications Page */}
+            <Route path="/publications" element={<Publications />} />
 
             {/* About & Contact Page */}
             <Route path="/contact" element={<AboutContact />} />

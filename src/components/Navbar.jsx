@@ -23,6 +23,7 @@ const Navbar = () => {
                 <div className='hidden md:flex gap-10 text-slate-100 font-medium items-center'>
                     <Link to="/" className='hover:text-blue-400 transition-colors'>Home</Link>
                     <Link to="/projects" className='hover:text-blue-400 transition-colors'>Projects</Link>
+                    <Link to="/publications" className='hover:text-blue-400 transition-colors'>Publications</Link>
                     <a href="/resume.pdf" download className='hover:text-blue-400 transition-colors'>
                         Resume
                     </a>
@@ -48,6 +49,9 @@ const Navbar = () => {
                     </Link>
                     <Link to="/projects" onClick={toggleMenu} className='text-slate-100 text-lg font-medium hover:text-blue-400'>
                         Projects
+                    </Link>
+                    <Link to="/publications" onClick={toggleMenu} className='text-slate-100 text-lg font-medium hover:text-blue-400'>
+                        Publications
                     </Link>
                     <a href="/resume.pdf" download className='text-slate-100 text-lg font-medium hover:text-blue-400'>
                         Resume
