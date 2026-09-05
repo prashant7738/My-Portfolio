@@ -53,9 +53,9 @@
  
  ### Evaluating AI Agents with LLM-Based Judges
  
- Undergraduate research by Prashant Kafle and Sunil Paudel on evaluating agent outputs with **ROUGE-L**, **Bradley-Terry rankings**, **Elo-style rankings**, and **judge-human agreement analysis** on GAIA-style tasks.
+ Undergraduate research paper by Prashant Kafle and Sunil Paudel on evaluating agent outputs with **ROUGE-L**, **Bradley-Terry rankings**, **Elo-style rankings**, and **judge-human agreement analysis** on GAIA-style tasks.
  
- **[Read the paper](https://www.prashantkafle33.com.np/IEEE-conference-template-062824.pdf)** · **[View the publication page](https://www.prashantkafle33.com.np/publications)**
+ **[Read the paper on GitHub](https://github.com/prashant7738/Agent_Eval_Pipeline/blob/main/Final%20Paper/ResearchPaper_AgentEvals.pdf)**
  
  ## What I care about
  
