@@ -174,6 +174,7 @@ const AboutContact = () => {
 
         </div>
       </div>
+      </div>
     </section>
   );
 };
