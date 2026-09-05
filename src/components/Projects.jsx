@@ -17,16 +17,16 @@ const Project = () => {
             highlights: ["PDF Chat with Citations", "Vector Semantic Search", "Pareto 80/20 Summaries", "Smart Flashcard Generation"]
         },
         {
-            title: "Multiagent Data Analyst",
-            description: "Automated LLM-powered data analysis pipeline using LangGraph state-based orchestration. Four specialized agents handle structural profiling, semantic tagging, preprocessing, and statistical analysis of CSV datasets — generating charts and quality scores automatically.",
+            title: "AnalyzeAI - Multiagent Data Analyst",
+            description: "Production-minded AI data analyst that turns messy CSV, Excel, JSON, JSONL, and Parquet files into decision-ready stories. A six-stage LangGraph workflow combines deterministic data engineering and statistics with bounded, validated LLM assistance to deliver cleaned data, quality scores, signal-driven charts, recommendations, interactive HTML/PDF reports, and dataset chat.",
             category: "AI / Data Engineering",
-            tags: ["Python", "LangGraph", "Groq", "Llama 3.3", "Pandas", "NumPy", "SciPy", "Matplotlib"],
+            tags: ["Python", "FastAPI", "React", "LangGraph", "Groq", "Gemini", "Pandas", "SciPy", "ECharts", "SSE"],
             github: "https://github.com/prashant7738/multiagent-analyst",
-            live: "",
+            live: "https://multiagent-analyst.vercel.app/",
             featured: true,
             ai: true,
             icon: "📊",
-            highlights: ["4-Agent LangGraph Pipeline", "Groq LLM Integration", "10-Step Data Preprocessing", "Auto Chart Generation"]
+            highlights: ["6-Agent Explainable AI Workflow", "Signal-Driven Chart Planning", "Real-Time SSE Dashboard", "Grounded HTML/PDF Reports"]
         },
         {
             title: "The Automaton Boardroom",

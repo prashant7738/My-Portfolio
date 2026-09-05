@@ -144,11 +144,13 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Multiagent Data Analyst} $|$ \emph{Python, LangGraph, Groq API, Llama 3.3-70B, Pandas, NumPy, Matplotlib}}
+          {\textbf{AnalyzeAI -- Multiagent Analyst} $|$ \emph{Python, FastAPI, React, LangGraph, Groq/Gemini, Pandas}
+          $|$ \href{https://multiagent-analyst.vercel.app/}{\underline{Live}}}
           {2026}
           \resumeItemListStart
-            \resumeItem{Built a LangGraph DAG orchestrating 4 stateless agents (Structural Profiler $\to$ Semantic Tagger $\to$ Preprocessor $\to$ Statistical Analyser) to process raw CSV files end-to-end}
-            \resumeItem{Semantic Tagger uses Groq Llama 3.3-70B with minimal-token prompts; Preprocessor runs a 10-step pipeline with IQR outlier clipping, normalisation, and a 0--100 data quality score}
+            \resumeItem{Built and shipped a full-stack, six-stage LangGraph data analyst that turns messy CSV, Excel, JSON, JSONL, and Parquet files into cleaned data, quality scores, statistical findings, recommendations, and decision-ready HTML/PDF reports}
+            \resumeItem{Combined deterministic Pandas/SciPy analysis with bounded Groq/Gemini assistance; added signal-driven chart planning, grounded narrative validation, ECharts/Matplotlib dual rendering, FastAPI jobs with SSE progress, dataset chat, and authenticated history}
+            \resumeItem{Engineered failure-aware delivery with LLM fallbacks, validation gates, upload limits, cooperative cancellation, isolated run artifacts, and a focused 205-test backend regression suite}
           \resumeItemListEnd
 
       \resumeProjectHeading
