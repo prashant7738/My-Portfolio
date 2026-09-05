@@ -74,6 +74,22 @@
    <a href="mailto:prashantkafle7738@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send email" /></a>
  </p>
  
+## GitHub snapshot
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=prashant7738&theme=github-compact&area=true&hide_border=true" alt="Prashant's GitHub activity graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=prashant7738&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="Prashant's GitHub statistics" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prashant7738&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Prashant's most-used languages" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/prashant7738/My-Portfolio/output/github-contribution-grid-snake.svg" alt="Prashant's GitHub contribution snake" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/prashant7738/Contextra-AI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=prashant7738&repo=Contextra-AI&theme=github_dark&hide_border=true" alt="Contextra AI repository" />
+  </a>
+  <a href="https://github.com/prashant7738/multiagent-analyst">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=prashant7738&repo=multiagent-analyst&theme=github_dark&hide_border=true" alt="AnalyzeAI repository" />
+  </a>
 </p>
