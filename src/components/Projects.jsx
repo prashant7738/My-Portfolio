@@ -18,7 +18,7 @@ const Project = () => {
         },
         {
             title: "AnalyzeAI - Multiagent Data Analyst",
-            description: "Production-minded AI data analyst that turns messy CSV, Excel, JSON, JSONL, and Parquet files into decision-ready stories. A six-stage LangGraph workflow combines deterministic data engineering and statistics with bounded, validated LLM assistance to deliver cleaned data, quality scores, signal-driven charts, recommendations, interactive HTML/PDF reports, and dataset chat.",
+            description: "Production-minded AI data analyst built with a 4-person team under faculty supervision, turning messy CSV, Excel, JSON, JSONL, and Parquet files into decision-ready stories. A six-stage LangGraph workflow combines deterministic data engineering and statistics with bounded, validated LLM assistance to deliver cleaned data, quality scores, signal-driven charts, recommendations, interactive HTML/PDF reports, and dataset chat, backed by a 205-test regression suite.",
             category: "AI / Data Engineering",
             tags: ["Python", "FastAPI", "React", "LangGraph", "Groq", "Gemini", "Pandas", "SciPy", "ECharts", "SSE"],
             github: "https://github.com/prashant7738/multiagent-analyst",
@@ -26,7 +26,7 @@ const Project = () => {
             featured: true,
             ai: true,
             icon: "📊",
-            highlights: ["6-Agent Explainable AI Workflow", "Signal-Driven Chart Planning", "Real-Time SSE Dashboard", "Grounded HTML/PDF Reports"]
+            highlights: ["Team of 4, Faculty-Supervised", "6-Agent Explainable AI Workflow", "205-Test Regression Suite", "Grounded HTML/PDF Reports"]
         },
         {
             title: "The Automaton Boardroom",

@@ -60,6 +60,9 @@ const AboutContact = () => {
               <p className="text-slate-400 text-lg leading-relaxed font-['Inter'] mt-4">
                 My background in full-stack engineering gives me an edge: I understand how AI systems connect to real databases, backends, and users — not just in notebooks, but in deployed products.
               </p>
+              <p className="text-slate-400 text-lg leading-relaxed font-['Inter'] mt-4">
+                I work both solo with freelance clients and in faculty-supervised teams — reviewing and validating AI-generated code before it ships, and collaborating via git-based version control and review checkpoints.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
