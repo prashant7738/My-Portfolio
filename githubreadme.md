@@ -31,7 +31,7 @@
  
  ### [Contextra AI](https://contextra-ai.vercel.app/) · [Source](https://github.com/prashant7738/Contextra-AI)
  
- Production-minded document intelligence platform for grounded PDF question answering. It combines a hybrid OCR pipeline, BGE-small embeddings, PostgreSQL/pgvector retrieval, citation-backed responses, Pareto 80/20 summaries, and smart flashcard generation. Built with FastAPI, SQLAlchemy, Alembic, Astro, and React.
+ Production-minded document intelligence platform for grounded PDF question answering. It combines a hybrid OCR pipeline, OpenAI text-embedding-3-small embeddings, PostgreSQL/pgvector retrieval, citation-backed responses, Pareto 80/20 summaries, and smart flashcard generation. Built with FastAPI, SQLAlchemy, Alembic, Astro, and React.
  
  ### [AnalyzeAI](https://multiagent-analyst.vercel.app/) · [Source](https://github.com/prashant7738/multiagent-analyst)
  

@@ -79,7 +79,7 @@ const AboutContact = () => {
                 <div className="text-violet-400"><GraduationCap size={24} /></div>
                 <div>
                   <h4 className="text-slate-100 font-bold text-sm">RAG Systems</h4>
-                  <p className="text-slate-500 text-xs mt-1">pgvector · BGE Embeddings · FastAPI</p>
+                  <p className="text-slate-500 text-xs mt-1">pgvector · OpenAI Embeddings · FastAPI</p>
                 </div>
               </div>
               {/* Feature 3 */}

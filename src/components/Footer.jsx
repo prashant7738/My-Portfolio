@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-slate-100 font-bold text-sm uppercase tracking-widest">Connect</h4>
             <div className="flex flex-col gap-3">
-              <a href="mailto:prashantkafle33@gmail.com" className="flex items-center gap-3 text-slate-400 hover:text-blue-500 transition-colors group">
+              <a href="mailto:prashantkafle7738@gmail.com" className="flex items-center gap-3 text-slate-400 hover:text-blue-500 transition-colors group">
                 <Mail size={18} />
                 <span>prashantkafle7738@gmail.com</span>
               </a>

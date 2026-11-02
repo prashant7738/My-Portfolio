@@ -95,7 +95,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Prashant Kafle} \\ \vspace{1pt}
-    \small +977-9741897738 $|$
+    \small Kathmandu, Nepal (Remote) $|$ +977-9741897738 $|$
     \href{mailto:prashantkafle7738@gmail.com}{\underline{prashantkafle7738@gmail.com}} $|$
     \href{https://www.linkedin.com/in/prashantkafle33/}{\underline{linkedin.com/in/prashantkafle33}} $|$
     \href{https://github.com/prashant7738}{\underline{github.com/prashant7738}} $|$
@@ -104,28 +104,20 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-  \small{AI Engineer and Computer Engineering student who ships production RAG pipelines, multi-agent LLM systems, and full-stack applications for freelance clients and in faculty-supervised team projects. Reviews and validates AI-generated code and outputs before they reach production, and works via git-based version control and code-review checkpoints with teammates and clients. Published research on evaluating AI agents with LLM-based judges. Focused on reliable, cost-efficient LLM architectures that ship to real users.}
+  \small{AI Engineer and Computer Engineering student who ships production RAG pipelines, multi-agent LLM systems, and full-stack applications for freelance clients and in faculty-supervised team projects. Validates AI-generated code and LLM outputs before they reach production. Wrote a research paper on evaluating AI agents with LLM-based judges. Focused on reliable, cost-efficient LLM systems. Available for remote full-time, contract, or internship work.}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Thapathali Engineering College, IOE -- Tribhuvan University}{Kathmandu, Nepal}
-      {Bachelor of Engineering in Computer Engineering}{Jan. 2024 -- Jan. 2028}
+      {Bachelor of Engineering in Computer Engineering}{Expected Jan. 2028}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Team Contributor -- AnalyzeAI Multiagent Data Analyst (Minor Project)}{Jan. 2026 -- Apr. 2026}
-      {Thapathali Engineering College, IOE -- Tribhuvan University (Team of 4, Faculty-Supervised)}{Kathmandu, Nepal}
-      \resumeItemListStart
-        \resumeItem{Collaborated with a 4-person team under faculty supervision to design and ship a six-stage LangGraph multi-agent data analyst, splitting backend, agent-pipeline, and frontend ownership across teammates}
-        \resumeItem{Owned the FastAPI backend and LLM-pipeline validation gates; used git-based version control and review checkpoints with the supervisor to align on architecture and validate AI-generated code before merging}
-      \resumeItemListEnd
 
     \resumeSubheading
       {Freelance Software Engineer (AI \& Full-Stack, Contract)}{Mar. 2025 -- Present}
@@ -136,6 +128,14 @@
         \resumeItem{Reviewed and validated AI-generated code and LLM outputs before client delivery, catching hallucinated logic and edge-case failures ahead of production}
       \resumeItemListEnd
 
+    \resumeSubheading
+      {Backend \& LLM Pipeline Owner -- AnalyzeAI (Minor Project)}{Jan. 2026 -- Apr. 2026}
+      {Thapathali Engineering College, IOE -- Tribhuvan University (Team of 4, Faculty-Supervised)}{Kathmandu, Nepal}
+      \resumeItemListStart
+        \resumeItem{Shipped a six-stage LangGraph data analyst with a 4-person team, splitting backend, agent-pipeline, and frontend ownership}
+        \resumeItem{Owned the FastAPI backend and LLM validation gates; validated AI-generated code through git-based review before merging}
+      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
@@ -144,11 +144,11 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Contextra AI} $|$ \emph{FastAPI, RAG, pgvector, PostgreSQL, BGE Embeddings, HuggingFace, Astro, React}
+          {\textbf{Contextra AI} $|$ \emph{FastAPI, RAG, pgvector, PostgreSQL, OpenAI Embeddings, Astro, React}
           $|$ \href{https://contextra-ai.vercel.app}{\underline{Live}}}
           {2026}
           \resumeItemListStart
-            \resumeItem{Architected a production RAG system for PDF Q\&A; hybrid OCR pipeline (PyMuPDF + EasyOCR) feeds BGE-small embeddings into pgvector for grounded, citation-backed LLM answers}
+            \resumeItem{Architected a production RAG system for PDF Q\&A; hybrid OCR pipeline (PyMuPDF + EasyOCR) feeds OpenAI text-embedding-3-small embeddings into pgvector for grounded, citation-backed LLM answers}
             \resumeItem{Added Pareto 80/20 summary and smart flashcard generation features; JWT multi-workspace auth; FastAPI backend with SQLAlchemy + Alembic}
           \resumeItemListEnd
 
@@ -163,11 +163,12 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{The Automaton Boardroom} $|$ \emph{Python, LangGraph, LangSmith, E2B, Streamlit, Groq, Gemini}}
+          {\textbf{The Automaton Boardroom} $|$ \emph{Python, LangGraph, LangSmith, E2B, Streamlit, Groq, Gemini}
+          $|$ \href{https://github.com/prashant7738/The-Automaton-Boardroom}{\underline{GitHub}}}
           {2026}
           \resumeItemListStart
-            \resumeItem{Built an autonomous multi-agent software micro-agency that converts app ideas into technical specs, generates code, provisions isolated E2B sandboxes, and runs verification tests before human review}
-            \resumeItem{Added prompt-safety guardrails, stack-aware developer prompts, MCQ build-decision gating, and Groq/Gemini fallback to keep the workflow resilient and cost-efficient}
+            \resumeItem{Built an autonomous multi-agent software micro-agency that turns app ideas into specs and code, tests it in isolated E2B sandboxes, feeds failures back for up to 5 fix iterations, and stops for human review}
+            \resumeItem{Added prompt-injection guards, build-decision questions, LangSmith tracing, and Groq/Gemini fallback for resilience and cost}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -187,8 +188,7 @@
       {Evaluating AI Agents with LLM-Based Judges}{2026}
       {Prashant Kafle, Sunil Paudel}{Undergraduate research paper}
       \resumeItemListStart
-        \resumeItem{Compared ROUGE-L, Bradley-Terry, Elo-style ranking, and judge-human agreement analysis for evaluating agent responses on GAIA-style tasks}
-        \resumeItem{PDF available in portfolio and resume assets: \href{https://www.prashantkafle33.com.np/IEEE-conference-template-062824.pdf}{\underline{paper link}}}
+        \resumeItem{Compared ROUGE-L, Bradley-Terry, Elo-style ranking, and judge-human agreement for evaluating agent responses on GAIA-style tasks: \href{https://www.prashantkafle33.com.np/IEEE-conference-template-062824.pdf}{\underline{paper}}, \href{https://github.com/prashant7738/Agent_Eval_Pipeline}{\underline{code}}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -198,10 +198,10 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, JavaScript (ES6+), TypeScript, SQL, HTML/CSS, C/C++} \\
-     \textbf{AI \& LLM}{: RAG, LangGraph, LangChain, Multi-Agent Systems, Prompt Engineering, HuggingFace, Groq API, OpenAI API, BGE Embeddings, pgvector, ChromaDB} \\
+     \textbf{AI \& LLM}{: RAG, LangGraph, LangChain, Multi-Agent Systems, LLM Evaluation, LangSmith, E2B, Prompt Engineering, HuggingFace, Groq API, OpenAI API, pgvector, ChromaDB} \\
      \textbf{Backend \& APIs}{: FastAPI, Django, Django REST Framework, Django Channels, WebSockets, JWT Auth} \\
      \textbf{Data \& Databases}{: Pandas, NumPy, Matplotlib, Scikit-learn, PostgreSQL, SQLAlchemy Core, Redis} \\
-     \textbf{Languages \& Tools}{: Python, JavaScript, TypeScript, SQL, React, Astro, Git, Docker, Linux} \
+     \textbf{Frontend \& Tools}{: React, Astro, Git, Docker, Linux}
     }}
  \end{itemize}
 

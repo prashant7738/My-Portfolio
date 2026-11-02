@@ -5,7 +5,7 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Gen AI & LLM Engineering",
-      skills: ["LangChain / LangGraph", "RAG Pipelines", "Prompt Engineering", "Embedding Models (BGE)", "Groq API / HuggingFace", "Agentic Workflows", "Vector Databases", "Llama 3 / GPT / Gemini"],
+      skills: ["LangChain / LangGraph", "RAG Pipelines", "Prompt Engineering", "Embedding Models (OpenAI)", "Groq API / HuggingFace", "Agentic Workflows", "Vector Databases", "Llama 3 / GPT / Gemini"],
       color: "text-blue-400",
       borderHover: "hover:border-blue-400",
       shadowHover: "hover:shadow-blue-500/10",
@@ -108,7 +108,7 @@ const Skills = () => {
             <div className="flex items-center justify-between">
               <div>
                 <h4 className="text-slate-100 font-bold text-xl font-['Space_Grotesk'] mb-2">Production RAG System</h4>
-                <p className="text-slate-400 font-['Inter']">Deployed a full-stack RAG application with pgvector, BGE embeddings, citation-backed answers, and hallucination-prevention guardrails.</p>
+                <p className="text-slate-400 font-['Inter']">Deployed a full-stack RAG application with pgvector, OpenAI embeddings, citation-backed answers, and hallucination-prevention guardrails.</p>
               </div>
               <div className="text-4xl ml-4">🧠</div>
             </div>
@@ -123,7 +123,7 @@ const Skills = () => {
               { label: "LLM Frameworks", techs: "LangChain, LangGraph" },
               { label: "LLM Models", techs: "Llama 3, Groq, Gemini" },
               { label: "Vector DB", techs: "pgvector, ChromaDB" },
-              { label: "Embeddings", techs: "BGE-small, HuggingFace" },
+              { label: "Embeddings", techs: "OpenAI text-embedding-3-small" },
               { label: "AI Backend", techs: "FastAPI, Django" },
               { label: "Frontend", techs: "React, Astro, Vite" },
               { label: "Data", techs: "Pandas, NumPy, SciPy" },
